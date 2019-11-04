@@ -1,0 +1,509 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-11-04T19:07:28.048Z",
+    "end": "2019-11-04T19:07:28.617Z",
+    "duration": 569,
+    "testsRegistered": 12,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "a15f134c-99fd-439c-9da3-1b6d22ee823d",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "c2865b3c-162f-40ea-8f05-4036e8ebba8d",
+        "title": "Add user Bob to group administrators",
+        "fullFile": "C:\\Users\\Zeko\\Documents\\ZeroToMastery\\testni_projekat\\permissions_api\\permissions_cloned\\test\\apitest.js",
+        "file": "\\test\\apitest.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Add user Bob to group administrators \"before all\" hook",
+            "timedOut": false,
+            "duration": 299,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "response = await call_api_add_user(data);\nbody = response.body;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "d8648d71-4102-4330-bbbe-072c86efb0c6",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Status code is 200",
+            "fullTitle": "Add user Bob to group administrators Status code is 200",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3dc0e744-4c57-4e65-9fb4-cf89399ceb5a",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Schema is valid",
+            "fullTitle": "Add user Bob to group administrators Schema is valid",
+            "timedOut": false,
+            "duration": 3,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(tv4.validate(body, schema1)).to.be.true;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "346cf09b-a0bb-4fc5-a01d-f50e218345cd",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "3dc0e744-4c57-4e65-9fb4-cf89399ceb5a",
+          "346cf09b-a0bb-4fc5-a01d-f50e218345cd"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 5,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 200000
+      },
+      {
+        "uuid": "0287953e-15f5-4b07-b587-fe5e8cea895f",
+        "title": "Add user alice to group administrators",
+        "fullFile": "C:\\Users\\Zeko\\Documents\\ZeroToMastery\\testni_projekat\\permissions_api\\permissions_cloned\\test\\apitest.js",
+        "file": "\\test\\apitest.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Add user alice to group administrators \"before all\" hook",
+            "timedOut": false,
+            "duration": 26,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "response = await call_api_add_user(data);\nbody = response.body;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "28d45481-88b1-4263-b93e-c2a21ce1f10b",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Status code is 200",
+            "fullTitle": "Add user alice to group administrators Status code is 200",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "6c7e04f9-6c64-4cb6-908b-610834dc45f8",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Schema is valid",
+            "fullTitle": "Add user alice to group administrators Schema is valid",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(tv4.validate(body, schema1)).to.be.true;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e59ed3ca-b747-48cb-bcaf-cf6751025460",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "6c7e04f9-6c64-4cb6-908b-610834dc45f8",
+          "e59ed3ca-b747-48cb-bcaf-cf6751025460"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 200000
+      },
+      {
+        "uuid": "c6dbf655-3d74-4e8e-ac24-f34e0dffee6c",
+        "title": "Add permission over object message of the day to user dan",
+        "fullFile": "C:\\Users\\Zeko\\Documents\\ZeroToMastery\\testni_projekat\\permissions_api\\permissions_cloned\\test\\apitest.js",
+        "file": "\\test\\apitest.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Add permission over object message of the day to user dan \"before all\" hook",
+            "timedOut": false,
+            "duration": 20,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "response = await call_api_add_perm(data);\nbody = response.body;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "72dddf72-1afb-47f9-9775-c3f3092f8b70",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Status code is 200",
+            "fullTitle": "Add permission over object message of the day to user dan Status code is 200",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "4faf445a-18ef-4e4e-adfa-898d5d5e7500",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Schema is valid",
+            "fullTitle": "Add permission over object message of the day to user dan Schema is valid",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(tv4.validate(body, schema2)).to.be.true;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "eae67793-bd93-461a-bdb9-71b0e5b4ffbf",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "4faf445a-18ef-4e4e-adfa-898d5d5e7500",
+          "eae67793-bd93-461a-bdb9-71b0e5b4ffbf"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 200000
+      },
+      {
+        "uuid": "be99ef0c-e8fb-4438-84bc-ddad91f16446",
+        "title": "Add permission over object message of the day to group administrators",
+        "fullFile": "C:\\Users\\Zeko\\Documents\\ZeroToMastery\\testni_projekat\\permissions_api\\permissions_cloned\\test\\apitest.js",
+        "file": "\\test\\apitest.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Add permission over object message of the day to group administrators \"before all\" hook",
+            "timedOut": false,
+            "duration": 43,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "response = await call_api_add_perm(data);\nbody = response.body;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "385d482a-01bb-47ba-b11a-350af9203970",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Status code is 200",
+            "fullTitle": "Add permission over object message of the day to group administrators Status code is 200",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a79ca20c-34a0-467c-b166-4e8417cc2d6a",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Schema is valid",
+            "fullTitle": "Add permission over object message of the day to group administrators Schema is valid",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(tv4.validate(body, schema2)).to.be.true;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5448fc55-d979-4d5d-8495-593577029ab8",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a79ca20c-34a0-467c-b166-4e8417cc2d6a",
+          "5448fc55-d979-4d5d-8495-593577029ab8"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 200000
+      },
+      {
+        "uuid": "d2dfaa0c-fecc-44d7-8461-e236de2d9218",
+        "title": "Add permission over object message of the day to group administrators",
+        "fullFile": "C:\\Users\\Zeko\\Documents\\ZeroToMastery\\testni_projekat\\permissions_api\\permissions_cloned\\test\\apitest.js",
+        "file": "\\test\\apitest.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Add permission over object message of the day to group administrators \"before all\" hook",
+            "timedOut": false,
+            "duration": 22,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "response = await call_api_add_perm(data);\nbody = response.body;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "31212122-e409-4dea-947a-74177d5cfee5",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Status code is 200",
+            "fullTitle": "Add permission over object message of the day to group administrators Status code is 200",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a329a8e2-75c7-43a0-a538-bb1a6296a725",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Schema is valid",
+            "fullTitle": "Add permission over object message of the day to group administrators Schema is valid",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(tv4.validate(body, schema2)).to.be.true;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "7b2c270d-5aa0-423e-b48d-61ca475e1bd4",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a329a8e2-75c7-43a0-a538-bb1a6296a725",
+          "7b2c270d-5aa0-423e-b48d-61ca475e1bd4"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 200000
+      },
+      {
+        "uuid": "005ccfc5-f8f1-4d20-b715-1acbd90c32dc",
+        "title": "Querry what permissions user Alice has over object message of the day.",
+        "fullFile": "C:\\Users\\Zeko\\Documents\\ZeroToMastery\\testni_projekat\\permissions_api\\permissions_cloned\\test\\apitest.js",
+        "file": "\\test\\apitest.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Querry what permissions user Alice has over object message of the day. \"before all\" hook",
+            "timedOut": false,
+            "duration": 20,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "response = await call_api_query_perm(data);\nbody = response.body;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b3052841-f131-43cb-b5fc-1dc73f555abf",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Status code is 200",
+            "fullTitle": "Querry what permissions user Alice has over object message of the day. Status code is 200",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a3ca2323-803b-451d-9186-dfd4e3dd01ae",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a3ca2323-803b-451d-9186-dfd4e3dd01ae"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 200000
+      },
+      {
+        "uuid": "1adf81ae-f1b7-417b-8af9-4c620360df6e",
+        "title": "Test if user Dan has permission modify over object message of the day.",
+        "fullFile": "C:\\Users\\Zeko\\Documents\\ZeroToMastery\\testni_projekat\\permissions_api\\permissions_cloned\\test\\apitest.js",
+        "file": "\\test\\apitest.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Test if user Dan has permission modify over object message of the day. \"before all\" hook",
+            "timedOut": false,
+            "duration": 19,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "response = await call_api_test_perm(data);\nbody = response.body;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9248f191-d251-4d6e-b4b3-90c19bc9d407",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Status code is 200",
+            "fullTitle": "Test if user Dan has permission modify over object message of the day. Status code is 200",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "591da05c-cf51-48f0-9ddc-d220ddf0eb1b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "591da05c-cf51-48f0-9ddc-d220ddf0eb1b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 200000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 200000
+  },
+  "copyrightYear": 2019
+}
